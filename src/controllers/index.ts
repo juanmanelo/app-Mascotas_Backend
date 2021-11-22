@@ -30,8 +30,8 @@ export * from './producto-proveedor.controller';
 export * from './producto.controller';
 export * from './proveedor-consulta-veterinaria.controller';
 export * from './proveedor.controller';
-export * from './usuario.controller';
 export * from './visita-domiciliaria-empleado.controller';
 export * from './visita-domiciliaria-mascota.controller';
 export * from './visita-domiciliaria.controller';
+
 

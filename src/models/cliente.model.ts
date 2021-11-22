@@ -1,6 +1,6 @@
-import {Entity, model, property, hasMany} from '@loopback/repository';
-import {Pedido} from './pedido.model';
+import {Entity, hasMany, model, property} from '@loopback/repository';
 import {Mascota} from './mascota.model';
+import {Pedido} from './pedido.model';
 
 @model()
 export class Cliente extends Entity {
@@ -49,15 +49,22 @@ export class Cliente extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    required: false,
   })
-  clien_telf1: string;
+  clien_clave: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  clien_telf2: string;
+  clien_celular: string;
+
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  clien_telf: string;
 
   @hasMany(() => Pedido)
   pedidos: Pedido[];

@@ -45,6 +45,24 @@ export class Empleado extends Entity {
     type: 'string',
     required: true,
   })
+  emp_correo: string;
+
+  @property({
+    type: 'string',
+    required: false,
+  })
+  emp_clave: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  emp_celular: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
   emp_comision: string;
 
   @property({

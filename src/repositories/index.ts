@@ -8,5 +8,6 @@ export * from './pedido.repository';
 export * from './plan.repository';
 export * from './producto.repository';
 export * from './proveedor.repository';
-export * from './usuario.repository';
 export * from './visita-domiciliaria.repository';
+
+
